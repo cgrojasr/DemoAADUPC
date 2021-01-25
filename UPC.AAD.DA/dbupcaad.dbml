@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="dbupcaad" Class="dbupcaadDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=dbupcaad.c7hd087gmch2.us-east-2.rds.amazonaws.com;Initial Catalog=dbupcaad;User ID=admin" SettingsObjectName="UPC.AAD.DA.Properties.Settings" SettingsPropertyName="dbupcaadConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.course" Member="courses">
+    <Type Name="course">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="idusercreator" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="datecreator" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="idusermodify" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="datemodify" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="course_course_student" Member="course_students" ThisKey="id" OtherKey="idcourse" Type="course_student" />
+    </Type>
+  </Table>
+  <Table Name="dbo.student" Member="students">
+    <Type Name="student">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="lastname" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="birthdate" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="email" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="ponderado" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="picture" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="idusercreator" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="datecreator" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="idusermodify" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="datemodify" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="student_course_student" Member="course_students" ThisKey="id" OtherKey="idstudent" Type="course_student" />
+    </Type>
+  </Table>
+  <Table Name="dbo.course_student" Member="course_students">
+    <Type Name="course_student">
+      <Column Name="idstudent" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="idcourse" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="idusercreator" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="datecreator" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="idusermodify" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="datemodify" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="course_course_student" Member="course" ThisKey="idcourse" OtherKey="id" Type="course" IsForeignKey="true" />
+      <Association Name="student_course_student" Member="student" ThisKey="idstudent" OtherKey="id" Type="student" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>
