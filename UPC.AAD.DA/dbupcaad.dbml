@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="dbupcaad" Class="dbupcaadDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=dbupcaad.c7hd087gmch2.us-east-2.rds.amazonaws.com;Initial Catalog=dbupcaad;User ID=admin" SettingsObjectName="UPC.AAD.DA.Properties.Settings" SettingsPropertyName="dbupcaadConnectionString" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-FPN37F7\SQLEXPRESS;Initial Catalog=dbupcaad;Persist Security Info=True;User ID=sa" SettingsObjectName="UPC.AAD.DA.Properties.Settings" SettingsPropertyName="dbupcaadConnectionString1" Provider="System.Data.SqlClient" />
   <Table Name="dbo.course" Member="courses">
     <Type Name="course">
       <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />

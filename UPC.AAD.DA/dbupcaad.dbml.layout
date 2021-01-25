@@ -2,36 +2,36 @@
 <ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="dbupcaad">
   <DataContextMoniker Name="/dbupcaadDataContext" />
   <nestedChildShapes>
-    <classShape Id="a3be9d6e-4061-45a7-9719-b112de010188" absoluteBounds="0.875, 0.5, 2, 2.1554996744791666">
+    <classShape Id="9a8191b1-1b73-4f67-beb0-f7a4e8eef79f" absoluteBounds="0.75, 0.875, 2, 2.1554996744791666">
       <DataClassMoniker Name="/dbupcaadDataContext/course" />
       <nestedChildShapes>
-        <elementListCompartment Id="3e513248-b996-4f2b-9ac4-cca498816549" absoluteBounds="0.89, 0.96, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="8ba3d3b7-4154-4bb7-bd0d-253d46b7c596" absoluteBounds="0.765, 1.335, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="0723905a-a066-44d3-b99a-a31392e97e97" absoluteBounds="0.875, 3.25, 2, 3.1170068359375014">
+    <classShape Id="14868601-50b0-4117-b615-60b3f315182a" absoluteBounds="0.75, 3.75, 2, 3.1170068359375014">
       <DataClassMoniker Name="/dbupcaadDataContext/student" />
       <nestedChildShapes>
-        <elementListCompartment Id="c95fe33c-f9df-4316-a658-ecfb880c1968" absoluteBounds="0.89, 3.71, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="e057cb2a-8365-4849-9495-d75ee7e50f2e" absoluteBounds="0.765, 4.21, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="92d10ecc-9a4f-4ea8-9e02-b1dfc27d5f21" absoluteBounds="3.625, 0.5, 2, 2.1554996744791666">
+    <classShape Id="99e1c6ec-2a90-4dfa-a56e-0c6657fcf65d" absoluteBounds="3.5, 0.875, 2, 2.1554996744791666">
       <DataClassMoniker Name="/dbupcaadDataContext/course_student" />
       <nestedChildShapes>
-        <elementListCompartment Id="e0886e10-eec5-4370-9596-a9a68a16c414" absoluteBounds="3.64, 0.96, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="6f0b538e-28b6-42ff-9d21-4d8e0a831cfd" absoluteBounds="3.515, 1.335, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(2.875 : 1.57774983723958); (3.625 : 1.57774983723958)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(2.75 : 1.95274983723958); (3.5 : 1.95274983723958)]" fixedFrom="Algorithm" fixedTo="Algorithm">
       <AssociationMoniker Name="/dbupcaadDataContext/course/course_course_student" />
       <nodes>
-        <classShapeMoniker Id="a3be9d6e-4061-45a7-9719-b112de010188" />
-        <classShapeMoniker Id="92d10ecc-9a4f-4ea8-9e02-b1dfc27d5f21" />
+        <classShapeMoniker Id="9a8191b1-1b73-4f67-beb0-f7a4e8eef79f" />
+        <classShapeMoniker Id="99e1c6ec-2a90-4dfa-a56e-0c6657fcf65d" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(2.875 : 4.80850341796875); (4.625 : 4.80850341796875); (4.625 : 2.65549967447917)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(2.75 : 5.30850341796875); (4.5 : 5.30850341796875); (4.5 : 3.03049967447917)]" fixedFrom="Algorithm" fixedTo="Algorithm">
       <AssociationMoniker Name="/dbupcaadDataContext/student/student_course_student" />
       <nodes>
-        <classShapeMoniker Id="0723905a-a066-44d3-b99a-a31392e97e97" />
-        <classShapeMoniker Id="92d10ecc-9a4f-4ea8-9e02-b1dfc27d5f21" />
+        <classShapeMoniker Id="14868601-50b0-4117-b615-60b3f315182a" />
+        <classShapeMoniker Id="99e1c6ec-2a90-4dfa-a56e-0c6657fcf65d" />
       </nodes>
     </associationConnector>
   </nestedChildShapes>

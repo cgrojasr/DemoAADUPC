@@ -33,5 +33,16 @@ namespace UPC.AAD.DA.Properties {
                 return ((string)(this["dbupcaadConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-FPN37F7\\SQLEXPRESS;Initial Catalog=dbupcaad;Persist Security " +
+            "Info=True;User ID=sa;Password=password")]
+        public string dbupcaadConnectionString1 {
+            get {
+                return ((string)(this["dbupcaadConnectionString1"]));
+            }
+        }
     }
 }

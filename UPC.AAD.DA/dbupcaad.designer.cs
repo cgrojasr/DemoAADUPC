@@ -42,7 +42,7 @@ namespace UPC.AAD.DA
     #endregion
 		
 		public dbupcaadDataContext() : 
-				base(global::UPC.AAD.DA.Properties.Settings.Default.dbupcaadConnectionString, mappingSource)
+				base(global::UPC.AAD.DA.Properties.Settings.Default.dbupcaadConnectionString1, mappingSource)
 		{
 			OnCreated();
 		}
