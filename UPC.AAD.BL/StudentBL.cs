@@ -27,5 +27,16 @@ namespace UPC.AAD.BL
                 throw ex;
             }
         }
+
+        public int Registrar(StudentBE.FullInformation objStudentBE) {
+            try
+            {
+                return objStudentDA.Registrar(objStudentBE);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

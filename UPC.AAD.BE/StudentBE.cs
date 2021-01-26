@@ -14,7 +14,7 @@ namespace UPC.AAD.BE
             public string LastName { get; set; }
             public DateTime BirthDate { get; set; }
             public string Email { get; set; }
-            public float Ponderado { get; set; }
+            public decimal Ponderado { get; set; }
             public string Picture { get; set; }
             public bool Active { get; set; }
         }

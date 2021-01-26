@@ -27,5 +27,24 @@ namespace UPC.AAD.DA
 
             return query;
         }
+
+        public int Registrar(StudentBE.FullInformation objStudentBE)
+        {
+            student request = new student();
+            request.name = objStudentBE.Name;
+            request.lastname = objStudentBE.LastName;
+            request.birthdate = objStudentBE.BirthDate;
+            request.email = objStudentBE.Email;
+            request.ponderado = objStudentBE.Ponderado;
+            request.active = true;
+            request.picture = objStudentBE.Picture;
+            request.idusercreator = 0;
+            request.datecreator = DateTime.Now;
+
+            dc.students.InsertOnSubmit(request);
+            dc.SubmitChanges();
+
+            return request.id;
+        }
     }
 }
